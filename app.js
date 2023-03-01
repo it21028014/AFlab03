@@ -1,2 +1,6 @@
-console.log("hello new file");
-console.log("hey");
+
+
+const fs = require('fs');
+ fs.writeFile('file.txt', 'Hello World!', function (err) {
+       if (err) throw err;   console.log('File saved!'); 
+    }); 
